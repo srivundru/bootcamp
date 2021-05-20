@@ -1,0 +1,42 @@
+{
+    "apiVersion": "1.1",
+    "swaggerVersion": "1.2",
+    "basePath": "http://127.0.0.1:5000",
+    "spec_endpoint_path": "/swager",
+    "resourcePath": "/",
+    "produces": [
+        "application/json"
+    ],
+    "description": "Auto generated API docs by flask-restful-swagger",
+    "models": {
+        "get": {
+            "id": "get",
+            "description": null,
+            "notes": null,
+            "required": [],
+            "properties": {}
+        }
+    },
+    "apis": [
+        {
+            "path": "/{num}",
+            "description": "Represents an abstract RESTful resource. Concrete resources should",
+            "notes": "extend from this class and expose methods for each supported HTTP<br/>method. If a resource is invoked with an unsupported HTTP method,<br/>the API will return a response with status 405 Method Not Allowed.<br/>Otherwise the appropriate method is called and passed all arguments<br/>from the url rule used when adding the resource to an Api instance. See<br/>:meth:`~flask_restful.Api.add_resource` for details.",
+            "operations": [
+                {
+                    "method": "get",
+                    "parameters": [
+                        {
+                            "name": "num",
+                            "dataType": "int",
+                            "paramType": "path"
+                        }
+                    ],
+                    "nickname": "nickname",
+                    "summary": null,
+                    "notes": "add 10 to the given number"
+                }
+            ]
+        }
+    ]
+}
